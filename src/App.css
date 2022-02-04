@@ -1,0 +1,296 @@
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+font-family: 'Sedgwick Ave', cursive;
+}
+.order{
+  background-color: #25b55fb5;
+  display: inline;
+}
+.order img{
+  width: 100px;
+}
+
+.primary{
+  background-color: #25b55fb5;
+}
+.order-summary ul{
+  padding: 0 !important;
+  margin: 0;
+  border-radius: 20%;
+  border: aqua 2px solid;
+  text-align: center;
+  width: 70px;
+}
+
+.order-summary ul li {
+  display: inline-block;
+  cursor: pointer;
+  list-style: none;
+ 
+}
+
+
+
+
+table {
+  caption-side: bottom !important;
+ border-collapse: inherit !important;
+}
+
+.fa-close:before, .fa-multiply:before, .fa-remove:before, .fa-times:before, .fa-xmark:before {
+  content: "\f00d";
+  cursor: pointer;
+  font-size: 15px;
+  color: #f90c2d;
+}
+
+p{
+  color: white;
+}
+
+
+.fa-cart-plus:before {
+  content: "\f217";
+  color: black;
+  font-size: 35px;
+  position: relative;
+  left: 13px;
+  top:2px;
+  z-index: 999;
+}
+
+.length{
+
+  position: absolute;
+  z-index: 1000 !important;
+  color: #fff;
+  background-color: #f90c2d;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 15px;
+}
+
+
+.products{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.product{
+  background-color: #25b55fb5;
+  width: 100%;
+  border-radius: 10px;
+  height: 240px;
+  padding: 10px;
+}
+
+
+.products img{
+width: 100px;
+height: 100px;
+border-radius: 50%;
+
+}
+
+.rating{
+  background-color: black;
+  color: #fff;
+  padding: 3px;
+  font-size: 10px;
+  width: 50px;
+  letter-spacing: 1px;
+  border-radius: 10px;
+
+}
+
+
+
+
+.fa-star:before {
+  content: "\f005";
+  color: goldenrod;
+}
+
+.fa-heart:before {
+  content: "\f004";
+  color: #fff;
+}
+
+.product li{
+  color: #fff;
+  font-weight: 600;
+  
+  list-style: none;
+}
+.product li span {
+  background-color: #fff;
+  color: #000;
+  width: 93px !important;
+  height: 30px;
+  font-weight: 500;
+  font-size: 9px;
+  padding: 5px;
+}
+
+
+
+
+
+.addto {
+  position: relative;
+  width: 50%;
+ 
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 40%; 
+  border-radius: 30%;
+  cursor: pointer;
+ background-color: rgb(255,255,255,0.8);
+  color: #000 !important; 
+  width: 100px;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 15px;
+  padding: 7px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.addto:hover .overlay {
+  opacity: 1;
+}
+
+
+.bg-menu{
+  background-color:#25b55fb5 ;
+  border-radius: 10px;
+}
+
+.menu{
+  background-color: #fff;
+  width: 200px;
+  border-radius: 18px;
+  border: none;
+  font-weight: 500;
+  outline: none;
+  padding: 8px;
+  margin-top: 100px;
+}
+
+
+.fa-minus-square:before, .fa-square-minus:before {
+  content: "\f146";
+  color: #25b55fb5;
+  font-size: 20px;
+}
+
+
+.dropdown-item:focus, .dropdown-item:hover {
+  color: #1e2125;
+
+}
+
+
+.dropdown-item {
+  display: block;
+  width: 100%;
+  padding:5px !important;
+  clear: both;
+  font-weight: 400;
+  color: #212529;
+  font-size: 13px !important;
+  text-align: inherit;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+}
+
+
+.dropdown-menu {
+  position: absolute;
+  z-index: 1000;
+  display: none;
+  min-width: 11rem !important;
+  
+  margin: 0;
+  font-size: 1rem;
+  color: #212529;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: 0.25rem;
+}
+
+
+@media (min-width: 1200px){
+  
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+      max-width: 1190px !important;
+  
+}}
+
+.red{
+  
+  font-size: 10px;
+}
+
+.space{
+  letter-spacing: 1px;
+  color: green;
+  font-weight: 600;
+}
+
+.bg-checkout{
+  background-color: #f2f2f2;
+  border:  1px solid lightgrey;
+  padding: 10px;
+}
+.bg-checkout ul li {
+  list-style: none;
+ 
+}
+.blk{
+  color: #000;
+}
+
+.remove{
+  color: #f90c2d;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+
+
+
+.droptarget {
+  border: 2px dashed #25b55fb5;
+  transition: border-width 0.5s linear;
+  text-align: center;
+  padding: 5px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
